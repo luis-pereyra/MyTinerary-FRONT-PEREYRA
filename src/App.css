@@ -1,0 +1,16 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  height: 5vh;
+}
+
+.app-footer {
+  height: 5vh;
+}
+.app-main {
+  flex-grow: 1;
+}
