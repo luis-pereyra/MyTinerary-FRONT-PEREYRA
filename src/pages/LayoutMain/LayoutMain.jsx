@@ -1,15 +1,14 @@
 import NavbarMain from "../../components/Navbar/NavbarMain"
 import Footer from "../../components/Footer/Footer"
+import { Outlet } from "react-router-dom"
 
-const LayoutMain = (props) => {
+const LayoutMain = () => {
   return (
     <div className='app-layout'>
-      <header className='container app-header'>
-        <NavbarMain />
-      </header>
-      {/*<main className='app-main'>*/}
-        {props.children}
-      {/*</main>*/}
+      <NavbarMain />
+      <main className='app-main'>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   )
